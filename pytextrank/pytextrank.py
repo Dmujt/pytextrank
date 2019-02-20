@@ -324,7 +324,7 @@ def write_dot (graph, ranks, path="graph.dot"):
     for edge in graph.edges():
         dot.edge(edge[0], edge[1], constraint="false")
 
-    with open(path, 'w') as f:
+    with open(path, 'w', encoding="utf-8") as f:
         f.write(dot.source.encode('utf-8'))
 
 
